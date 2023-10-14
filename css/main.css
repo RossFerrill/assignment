@@ -1,0 +1,71 @@
+/*
+Name: Ross Ferrill
+Student number: 8748349
+*/
+body{
+    width: 100vw;
+    max-width: 1500px;
+    margin: auto;
+    font: bold;
+    padding: auto;
+    background-color: lightgoldenrodyellow;
+}
+header{
+border: 3px;
+border-color: black;
+border-style:solid ;
+border-radius: 25px;
+padding: 1em;
+margin: 1em;
+}
+footer{
+    border: 3px;
+    border-color: black;
+    border-style:solid ;
+    border-radius: 25px;
+    padding: 1em;
+    margin: 1em;
+    clear: both;
+}
+h1,h2{
+    color: lightblue;
+    font-variant-caps: small-caps;
+}
+footer p{
+    color: lightcoral;
+    font-size: small;
+}
+main{
+    float: left;
+    width: 700px;
+    padding: 50px;
+    margin: 50px;
+}
+aside{
+    float: right;
+    width: 400px;
+    padding: 50px;
+    margin: 50px;
+}
+.mainimg{
+    border: 3px;
+    border-style: solid;
+}
+figcaption{
+    font-weight: bold;
+    font-variant: small-caps;
+}
+q{
+    font-family:cursive, Arial, Helvetica, sans-serif;
+}
+ul li{
+list-style-type: none;
+line-height: 50px;
+}
+li > a{
+    text-decoration: none;
+    color: lightblue;
+}
+aside a:hover{
+    color: green;
+}
