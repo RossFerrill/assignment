@@ -8,8 +8,9 @@ body{
     margin: auto;
     font: bold;
     padding: auto;
-    background-color: lightgoldenrodyellow;
-}
+    background: linear-gradient(180deg, rgba(151, 221, 225, 0.847) 32%, rgba(222, 202, 165, 0.879) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    }
 header{
 border: 3px;
 border-color: black;
@@ -27,29 +28,39 @@ footer{
     margin: 1em;
     clear: both;
 }
-h1,h2{
-    color: lightblue;
+h1{
+    color: black;
     font-variant-caps: small-caps;
 }
+h2{
+    color: black;
+}
+footer{
+    background: linear-gradient(180deg, rgba(151, 221, 225, 0.847) 32%, rgba(222, 202, 165, 0.879) 100%);
+}
 footer p{
-    color: lightcoral;
+    color: black;
     font-size: small;
 }
 main{
-    float: left;
-    width: 700px;
-    padding: 50px;
-    margin: 50px;
+   
+    padding: 2em;
+    margin: 2em;
 }
 aside{
-    float: right;
-    width: 400px;
-    padding: 50px;
-    margin: 50px;
+    background-image: url(../images/white.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25em;
+    padding: 3em;
+    
+   
 }
+
 .mainimg{
     border: 3px;
     border-style: solid;
+    shape-outside:border-box;
 }
 figcaption{
     font-weight: bold;
@@ -64,8 +75,79 @@ line-height: 50px;
 }
 li > a{
     text-decoration: none;
-    color: lightblue;
+    color: #2254cd;
 }
 aside a:hover{
     color: green;
 }
+.menu .submenu{
+    display: none;
+}
+.menu:hover .submenu{
+    display: block;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+
+}
+#gallary{
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(6% 5%, 100% 0%, 94% 92%, 0 100%, 0% 50%);
+    
+}
+table, tr, td{
+    border: solid black 1px;
+}
+.userinput{
+    color: black;
+}
+.textcolour{
+    color: white;
+}
+@media (max-width: 1250px) {
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1rem;
+    }
+    aside{
+        background-image: url(../images/gray.jpg);
+        
+    }
+    aside a{
+        color: black;
+    }
+    html{
+        font-size: 10px
+    }
+  }
+  @media (max-width: 500px) {
+    body{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2rem;
+    }
+
+    
+    html{
+        font-size: 5px;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+  }
+  
+    
+
